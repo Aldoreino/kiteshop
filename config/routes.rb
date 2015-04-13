@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get "kites/" => "kites#index"
+  get "kites/new" => "kites#new", as: :new_kite
+  post "kites/" => "kites#create"
   get "kites/:id" => "kites#show", as: :kite #declares HTTP method and pairs our controller with an action
 
 
