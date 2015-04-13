@@ -1,0 +1,12 @@
+<h1>Welcome to our kites shop</h1>
+
+<ul>
+	<% @kites.each do |kite| %>
+	<li>
+		<strong> <%= kite.name %> </strong> -- <% kite.color %>
+	</li>
+
+	<% end %>
+
+
+</ul>
